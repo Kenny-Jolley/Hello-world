@@ -1,18 +1,24 @@
-Hello-world
-===========
+# Hello world example program
 
 An example FORTRAN hello-world program
 
-Compile program with:
+## Makefile
 
-make
+* `make`  will build the helloworld.exe executable
+* `make clean` will delete all object files and helloworld.exe
 
-Requires ifort compiler.  Edit if compiler is not available
+## Compilers
 
-Run using:
+The makefile calls ifort to compile the code.  If this is not available, then this must be changed to an available compiler, for example gfortran.
 
+## Run using:
+
+```sh
 ./helloworld.exe
+```
 
 Output:
 
+```sh
 Hello World!
+```
